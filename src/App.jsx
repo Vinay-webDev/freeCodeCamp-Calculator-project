@@ -44,9 +44,9 @@ const Key = ({ keyData: {id, value}, handleInput }) => {
 //Keyboard component
 const Keyboard = ({ handleInput }) => {
   return(
-      <div classaName="keys" >
-        {Data.map((key) => (<Key key={key.id} keyData={key} handleInput={handleInput} />))}
-      </div>
+    <div className="keys" >
+      {Data.map((key) => (<Key key={key.id} keyData={key} handleInput={handleInput} />))}
+    </div>
   );
 }
 
