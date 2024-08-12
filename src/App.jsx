@@ -52,13 +52,13 @@ const Keyboard = ({ handleInput }) => {
 
 
 
-
-
-
 function App() {
   
-  const [input, setInput] = useState();
+  const [input, setInput] = useState(0);
   const [output, setOutput] = useState();
+  
+
+
 
   const handleInput = () => {
 
