@@ -56,12 +56,19 @@ function App() {
   
   const [input, setInput] = useState(0);
   const [output, setOutput] = useState();
+  //////////////////
+  const [calcData, setCalcData] = useState();
+  /////////////////
+  useEffect(() => {
+    handleOutput();
+  }, [calcData]);
+
+  const handleInput = (value) => {
+
+  }
   
-
-
-
-  const handleInput = () => {
-
+  const handleOutput = () => {
+      setOutput(calcData);
   }
 
   return (
