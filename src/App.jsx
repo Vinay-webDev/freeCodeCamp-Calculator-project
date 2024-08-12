@@ -36,7 +36,7 @@ const Display = ({ input, output }) => {
 //Key component
 const Key = ({ keyData: {id, value}, handleInput }) => {
   return(
-    <button id={id} handleInput={() => {handleInput}} >{value}</button>
+    <button id={id} onClick={() => {handleInput(value)}} >{value}</button>
   );
 }
 
@@ -64,7 +64,7 @@ function App() {
   }, [calcData]);
 
   const handleInput = (value) => {
-
+      console.log(value);
   }
   
   const handleOutput = () => {
